@@ -1,0 +1,14 @@
+.container{
+  display: -webkit-flex;
+  display: flex;
+  width: 100px;
+  height: 100px;
+
+}
+
+.flex-item{
+  background-color: gray;
+  height: 300px;
+  width: 300px;
+  margin: 10px;
+}
