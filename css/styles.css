@@ -19,3 +19,28 @@
   margin: 30px;
   border-radius: 10px;
 }
+
+img {
+  height: 250px;
+  width: 190px;
+}
+
+.container1:hover .flex-item,  
+.container1.hover .flex-item {
+  -webkit-transform: rotateY(180deg);
+}
+
+.container2:hover .flex-item,  
+.container2.hover .flex-item {
+  -webkit-transform: rotateY(180deg);
+}
+
+.flex-item {
+  -webkit-transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
+  position: relative;
+}
+
+.front {
+  background: url(../assets/basketball.png)
+}
