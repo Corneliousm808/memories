@@ -18,29 +18,35 @@
   height: 275px;
   margin: 30px;
   border-radius: 10px;
-}
-
-img {
-  height: 250px;
-  width: 190px;
-}
-
-.container1:hover .flex-item,  
-.container1.hover .flex-item {
-  -webkit-transform: rotateY(180deg);
-}
-
-.container2:hover .flex-item,  
-.container2.hover .flex-item {
-  -webkit-transform: rotateY(180deg);
-}
-
-.flex-item {
-  -webkit-transition: 0.6s;
-  -webkit-transform-style: preserve-3d;
+  transition: 0.6s;
+  transform-style: preserve-3d;
   position: relative;
 }
 
+.back {
+  height: 250px;
+  width: 190px;
+  background: 
+}
+
+.container1 {
+  perspective: 1000;
+}
+
+
+.front, .back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .front {
-  background: url(../assets/basketball.png)
+  background: url(http://davidwalsh.name/demo/dwflip.jpg) 0 0 no-repeat;
+  z-index: 2;
+}
+
+img{
+  height: 250px;
+  width: 190px;
 }
