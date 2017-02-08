@@ -26,7 +26,7 @@
 .back {
   height: 250px;
   width: 190px;
-  background: 
+
 }
 
 .container1 {
@@ -35,17 +35,23 @@
 
 
 .front, .back {
-  backface-visibility: hidden;
+
   position: absolute;
-  top: 0;
-  left: 0;
+
 }
 
 .front {
-  background: url(http://davidwalsh.name/demo/dwflip.jpg) 0 0 no-repeat;
-  z-index: 2;
+  backface-visibility: hidden;
+  background-image: url('../assets/2.jpg');
+  background-position: center;
 }
+.back{
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  background-image: url('../assets/3.jpg');
+  background-position: center;
 
+}
 img{
   height: 250px;
   width: 190px;
